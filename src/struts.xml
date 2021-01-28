@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" namespace="/" extends="struts-default">
+
+        <action name="logingo" method="connectsystem" class="action.AdminLoginAction">
+             <result name="systemadmin">leaderview.jsp</result>
+              <result name="manager">managerview.jsp</result>
+              <result name="hradmin">hrview.jsp</result>
+              <result name="error">login.jsp</result>
+              <result name="input">login.jsp</result>
+        </action>
+       
+        
+
+         <action name="employee" method="insertemployeedata" class="action.EmployeeAction">
+             <result name="success">hrview.jsp</result>
+              <result name="error">employeeregister.jsp</result>
+              <result name="input">employeeregister.jsp</result>
+              <result name="invalid">employeeregister.jsp</result>
+              
+        </action>
+       
+        
+        <action name="evaluation" method="Evaluate_Data" class="action.EvaluateAction">
+        	<result name="success">evaluateform.jsp</result>
+        </action>
+        
+        <action name="hrevaluation" method="Evaluate_Data" class="action.EvaluateAction">
+        	<result name="success">hrevaluateform.jsp</result>
+        </action>
+        
+        <action name="managerevaluation" method="Evaluate_Data" class="action.EvaluateAction">
+        	<result name="success">managerevaluateform.jsp</result>
+        </action>
+        
+        
+        <action name="hrevaluate" method="HREvaluate" class="action.EvaluateAction">
+        	<result name="success">hrview.jsp</result>
+        </action>
+         <action name="hrdelete" method="DeleteEmployee" class="action.EvaluateAction">
+        	<result name="success">hrview.jsp</result>
+        </action>
+        
+        <action name="evaluate" method="Evaluate" class="action.EvaluateAction">
+        	<result name="success">leaderview.jsp</result>
+        </action>
+        
+         <action name="managerevaluate" method="ManagerEvaluate" class="action.EvaluateAction">
+        	<result name="success">evaluateview.jsp</result>
+        </action>
+       
+       <action name="empupdate" method="Evaluate_Data" class="action.EvaluateAction">
+        	<result name="success">updateemp.jsp</result>
+        </action>
+        
+        <action name="updateemployee" method="UpdateEmployee" class="action.EvaluateAction">
+        	<result name="success">hrview.jsp</result>
+        </action>
+       
+    </package>
+
+   
+</struts>

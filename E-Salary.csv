@@ -1,0 +1,21 @@
+,Attendence %,Assignment,Team Work,Communication Skill,English skill,Job Skill,Increase Salary
+1,Above 90%,complete,Excellent,Excellent,Advance,Good,15%
+2,Above 90%,In progess,Normal,Good,Intermediate,Average,10%
+3,Above 90%,incomplete,Bad,Normal,Basic,Below Average,5%
+4,75% - 90%,complete,Excellent,Normal,Basic,Average,15%
+5,75% - 90%,In progess,Normal,Excellent,Intermediate,Good,10%
+6,75% - 90%,incomplete,Excellent,Good,Intermediate,Good,5%
+7,Below 75%,complete,Excellent,Excellent,Advance,Average,15%
+8,Below 75%,In progess,Bad,Good,Intermediate,Below Average,5%
+9,Below 75%,incomplete,Bad,Normal,Basic,Good,10%
+10,Above 90%,complete,Bad,Excellent,Intermediate,Average,15%
+11,75% - 90%,In progess,Normal,Normal,Basic,Below Average,5%
+12,Below 75%,incomplete,Excellent,Good,Advance,Good,5%
+13,Below 75%,complete,Normal,Excellent,Basic,Below Average,5%
+14,75% - 90%,In progess,Normal,Excellent,Intermediate,Average,10%
+15,Above 90%,incomplete,Excellent,Normal,Intermediate,Below Average,5%
+16,Below 75%,complete,Normal,Good,Basic,Average,10%
+17,75% - 90%,complete,Bad,Excellent,Advance,Good,15%
+18,75% - 90%,incomplete,Bad,Normal,Intermediate,Below Average,5%
+19,Above 90%,complete,Normal,Good,Basic,Good,10%
+20,Below 75%,In progess,Bad,Normal,Advance,Below Average,5%

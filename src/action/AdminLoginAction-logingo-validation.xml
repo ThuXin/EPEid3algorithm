@@ -1,0 +1,21 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+    <field name="adloginname">
+        <field-validator type="requiredstring">
+        	<param name="trim">true</param>
+            <message>Username is required</message>
+        </field-validator>
+    </field>
+    <field name="adloginpas">
+        <field-validator type="requiredstring">
+            <message>Password is required</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="minLength">6</param>
+            <message>Please enter at least 6 characters</message>
+        </field-validator>
+    </field>
+</validators>

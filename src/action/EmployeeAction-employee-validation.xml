@@ -1,0 +1,50 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+    <field name="e.empname">
+        <field-validator type="requiredstring">
+        	
+            <message>Employee Name is required</message>
+        </field-validator>
+    </field>
+    <field name="e.emppass">
+        <field-validator type="requiredstring">
+            <message>Password is required</message>
+            
+        </field-validator>
+          <field-validator type="stringlength">
+            <param name="minLength">6</param>
+            <message>Please enter at least 6 characters</message>
+        </field-validator>
+    </field>
+    <field name="e.empemail">
+        <field-validator type="requiredstring">
+            <message>Email is required</message>
+        </field-validator>
+        <field-validator type="email">
+        	<message>Email is invalid</message>
+        </field-validator>
+    </field>
+    
+    <field name="e.empaddress">
+        <field-validator type="requiredstring">
+            <message>Address is required</message>
+        </field-validator>
+    </field>
+    
+    <field name="e.empphone">
+        <field-validator type="requiredstring">
+            <message>Telephone is Required</message>
+        </field-validator>
+        <field-validator type="regex" short-circuit="true">
+			<param name="regex">^[0-9]+$</param>
+			<message>Telephone must integer</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="regex">^[0-9]{8,11}$</param>
+			<message>Check Phone Number</message>
+		</field-validator>
+    </field>
+</validators>

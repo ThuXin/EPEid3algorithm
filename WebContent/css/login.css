@@ -1,0 +1,25 @@
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:14px;
+    background-color:#daf8e3; 
+    background-image: url("1.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+	
+  }
+  .error{
+    color:red;
+    font-family: arial;
+    font-size: 14px;
+  }
+label{
+  font-size: 18px;
+}
+.header{
+  background-color: #0097a7;
+  color: white;
+  border-radius: 5px;
+  padding: 18px;
+  text-align: center;
+}

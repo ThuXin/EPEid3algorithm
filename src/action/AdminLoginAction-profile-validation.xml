@@ -1,0 +1,59 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+    <field name="cp.cname">
+        <field-validator type="requiredstring">
+        	
+            <message>Company Name is required</message>
+        </field-validator>
+    </field>
+    <field name="cp.address">
+        <field-validator type="requiredstring">
+            <message>Address is required</message>
+        </field-validator>
+    </field>
+    
+    <field name="cp.city">
+        <field-validator type="requiredstring">
+            <message>City is Required</message>
+        </field-validator>
+    </field>
+    
+     <field name="cp.email">
+        <field-validator type="requiredstring">
+            <message>Email is Required</message>
+        </field-validator>
+         <field-validator type="email">
+            <message>Email is Invalid</message>
+        </field-validator>
+    </field>
+    
+    
+    
+     <field name="cp.number">
+        <field-validator type="requiredstring">
+            <message>Telephone is Required</message>
+        </field-validator>
+        <field-validator type="regex" short-circuit="true">
+			<param name="regex">^[0-9]+$</param>
+			<message>Telephone must integer</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="regex">^[0-9]{8,11}$</param>
+			<message>Check Phone Number</message>
+		</field-validator>
+    </field>
+    
+    <field name="cp.zip">
+        <field-validator type="requiredstring">
+            <message>Zip is Required</message>
+        </field-validator>
+        <field-validator type="stringlength">
+            <param name="minLength">5</param>
+            <message>Zip is length 5</message>
+        </field-validator>
+    </field>
+    
+</validators>
