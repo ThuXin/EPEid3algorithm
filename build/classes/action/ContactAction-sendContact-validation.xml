@@ -1,0 +1,35 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+
+<validators>
+    <field name="cont.contactname">
+        <field-validator type="requiredstring">
+        	<param name="trim">true</param>
+            <message>Name is required</message>
+        </field-validator>
+    </field>
+    <field name="cont.contactemail">
+        <field-validator type="requiredstring">
+            <message>Email is required</message>
+        </field-validator>
+        <field-validator type="email">
+          
+           <message>Email is invalid</message>
+        </field-validator>
+    </field>
+     <field name="cont.contactsubject">
+        <field-validator type="requiredstring">
+            <message> Subject is required</message>
+        </field-validator>
+        
+    </field>
+    
+    <field name=" cont.contactmessage">
+        <field-validator type="requiredstring">
+            <message>Message is required</message>
+        </field-validator>
+        
+    </field>
+   
+</validators>
